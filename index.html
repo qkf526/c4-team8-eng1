@@ -14,6 +14,109 @@
   <script defer src="script.js"></script>
 </head>
 <body>
-  
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page-shell">
+    <header class="site-header" id="top">
+      <a href="#top" class="brand" aria-label="Goose Patrol home">
+        <span class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none"><path d="M11 28c-1-7 3-12 10-12h2V9c0-4 3-6 6-6 4 0 6 4 6 8v3l3 1-3 3h-4v6c0 8-7 13-15 11-3-1-5-3-5-7Z" fill="currentColor"/><circle cx="30" cy="10" r="1.25" fill="#10221e"/></svg>
+        </span>
+        <span>goose<span class="brand-accent">patrol</span><small>ENG1 PROJECT HUB</small></span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="navigation" id="main-navigation" aria-label="Main navigation">
+        <a href="#about">The game</a>
+        <a href="#documents">Documents</a>
+        <a href="#evidence">Evidence</a>
+        <a href="#team">Our team</a>
+        <a class="nav-repo" data-link="repository" aria-disabled="true"><span aria-hidden="true">↗</span> Repository</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-grain" aria-hidden="true"></div>
+        <div class="hero-content">
+          <div class="eyebrow"><span class="live-dot"></span> ENGINEERING 1 <span class="eyebrow-divider">/</span> 2026–27</div>
+          <h1 id="hero-title">Peace was <em>never</em><br>an option<span class="dot">.</span></h1>
+          <p class="hero-description">One student. A campus full of geese. Five minutes to escape. Meet <strong>Goose Patrol</strong> — a playful 2D survival challenge built by our software engineering team.</p>
+          <div class="hero-actions">
+            <a href="#documents" class="button button-lime">Explore the project <span aria-hidden="true">↗</span></a>
+            <a class="button button-outline" data-link="game" aria-disabled="true">Download the game <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-tags" aria-label="Game details"><span>☕ JAVA 17</span><span>⌛ 5 MINUTES</span><span>✦ SINGLE PLAYER</span></div>
+        </div>
+        <div class="art-area" aria-label="Illustration of a goose on a green university campus">
+          <div class="scene-label"><span class="scene-label-index">001 / CAMPUS ALERT</span><strong>HONK. HONK.<br>YOU'RE SURROUNDED.</strong></div>
+          <svg class="hero-art" viewBox="0 0 680 580" role="img" aria-label="A cartoon white goose on a university campus with green grass, a path and leafy trees">
+            <defs>
+              <linearGradient id="grass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b2cf64"/><stop offset="1" stop-color="#79ac55"/></linearGradient>
+              <linearGradient id="body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff9df"/><stop offset="1" stop-color="#d6e9d9"/></linearGradient>
+              <filter id="shadow"><feGaussianBlur stdDeviation="15"/></filter>
+            </defs>
+            <path d="M0 130Q170 72 341 128T680 119V580H0Z" fill="#99c66a"/>
+            <path d="M0 320Q170 268 343 346T680 305V580H0Z" fill="url(#grass)"/>
+            <path d="M108 580L274 281l95-37 208 336Z" fill="#e7d7a2"/><path d="M145 580L300 293l38-15 178 302Z" fill="#f3e8be"/>
+            <g opacity=".73"><path d="M484 231v-87h110v92" fill="#c3d3b8"/><path d="M473 142h132v12H473Z" fill="#7f9877"/><path d="M512 176h24v29h-24ZM555 176h24v29h-24Z" fill="#4d786c"/><path d="M504 231v-12h83v12" fill="#7e977b"/></g>
+            <g><path d="M65 300V176" stroke="#5c7d47" stroke-width="24" stroke-linecap="round"/><circle cx="36" cy="164" r="65" fill="#4d8251"/><circle cx="96" cy="132" r="70" fill="#5e995d"/><circle cx="39" cy="101" r="54" fill="#75a95d"/><circle cx="105" cy="191" r="44" fill="#4e8d56"/></g>
+            <g><path d="M620 330V205" stroke="#617d48" stroke-width="19" stroke-linecap="round"/><circle cx="584" cy="196" r="55" fill="#497e51"/><circle cx="650" cy="171" r="60" fill="#5c9b59"/><circle cx="615" cy="124" r="57" fill="#85aa5d"/></g>
+            <ellipse cx="357" cy="493" rx="175" ry="29" fill="#466543" opacity=".32" filter="url(#shadow)"/>
+            <g transform="translate(169 115)">
+              <path d="M216 324q-20 24-43 49" stroke="#d87b3a" stroke-width="15" stroke-linecap="round"/><path d="M275 323q18 25 38 48" stroke="#d87b3a" stroke-width="15" stroke-linecap="round"/><path d="m173 372-38 14m38-14 28 14m110-13-37 11m37-11 28 17" stroke="#d87b3a" stroke-width="13" stroke-linecap="round"/>
+              <path d="M113 224c-28-27-41-61-34-78 24 7 41 14 61 40" fill="#e0ebe0"/><path d="M115 221c-12-62 15-114 102-111 54 0 95 29 118 68 22 37 12 101-24 143-25 27-66 43-118 37-65-7-105-60-78-137Z" fill="url(#body)" stroke="#c6d5c5" stroke-width="5"/>
+              <path d="M257 171c8-57-13-120-7-170 3-31 41-50 69-30 16 11 21 41 12 60l-12 121-8 68" fill="url(#body)" stroke="#c6d5c5" stroke-width="5"/>
+              <path d="M305-21q45 4 66 26-13 26-51 15" fill="#ee9146"/><circle cx="316" cy="-8" r="5.8" fill="#20312c"/><circle cx="318" cy="-10" r="1.6" fill="white"/>
+              <path d="M190 224c21-22 55-24 86-11-9 35-49 63-84 50" fill="#e4ece2" stroke="#cfdccf" stroke-width="4"/>
+              <path d="M102 239c-5-32 2-57 13-65" stroke="#e9f0df" stroke-width="12" stroke-linecap="round"/>
+            </g>
+            <g fill="#437846"><path d="m110 510-9-25 18 18 11-24-3 31ZM594 460l-10-23 16 12 8-20 4 31ZM46 411l-6-20 14 9 12-22-4 33Z"/><circle cx="530" cy="376" r="5"/><circle cx="150" cy="381" r="6"/><circle cx="564" cy="520" r="6"/></g>
+            <g fill="#f4e1a1"><circle cx="80" cy="355" r="5"/><circle cx="545" cy="423" r="4"/><circle cx="167" cy="528" r="6"/></g>
+          </svg>
+          <div class="time-pill"><span class="pill-clock">◷</span><span><small>THE CLOCK IS TICKING</small><strong>05:00</strong></span></div>
+          <div class="scribble scribble-a" aria-hidden="true">HONK!</div>
+        </div>
+      </section>
+
+      <section class="intro section-width" id="about" aria-labelledby="about-title">
+        <div class="section-kicker">// THE MISSION</div>
+        <div class="intro-row"><div><h2 id="about-title">It's you versus<br>the <span class="highlight">whole flock.</span></h2></div>
+        <p>Navigate the campus, deploy items to distract the geese, trigger hidden encounters, and escape before time runs out. This project page is where we share our game, our engineering decisions, and the evidence behind them.</p></div>
+        <div class="metrics" aria-label="Assessment 1 game scope">
+          <div><strong>05<span>min</span></strong><small>GAME TIMER</small></div>
+          <div><strong>02<span>+</span></strong><small>INITIAL ITEMS (PHASE 1)</small></div>
+          <div><strong>02<span>+</span></strong><small>HIDDEN EVENTS (PHASE 1)</small></div>
+          <div><strong>01</strong><small>GOAL: ESCAPE!</small></div>
+        </div>
+      </section>
+
+      <section class="docs-section" id="documents" aria-labelledby="docs-title">
+        <div class="section-width">
+          <div class="section-heading"><div><div class="section-kicker">// ASSESSMENT 01</div><h2 id="docs-title">The important <span class="highlight">stuff.</span></h2><p>All project reports, exactly where you expect them to be.</p></div><span class="count-label">FIVE DOCUMENTS ↗</span></div>
+          <div class="document-grid">
+            <a class="document-card" data-link="requirements" aria-disabled="true"><div class="card-top"><span class="card-num">01 / REQUIREMENTS</span><span class="card-arrow" aria-hidden="true">↗</span></div><div class="document-icon" aria-hidden="true">≡</div><h3>Requirements</h3><p>User needs, functional requirements, and quality requirements.</p><div class="card-bottom"><code>Req1.pdf</code><span class="link-status">Link pending</span></div></a>
+            <a class="document-card" data-link="architecture" aria-disabled="true"><div class="card-top"><span class="card-num">02 / SYSTEM DESIGN</span><span class="card-arrow" aria-hidden="true">↗</span></div><div class="document-icon" aria-hidden="true">⌘</div><h3>Architecture</h3><p>Structural, behavioural, and design decision documentation.</p><div class="card-bottom"><code>Arch1.pdf</code><span class="link-status">Link pending</span></div></a>
+            <a class="document-card" data-link="planning" aria-disabled="true"><div class="card-top"><span class="card-num">03 / EXECUTION PLAN</span><span class="card-arrow" aria-hidden="true">↗</span></div><div class="document-icon" aria-hidden="true">▦</div><h3>Method & Planning</h3><p>Development approach, team roles, tasks, and schedule.</p><div class="card-bottom"><code>Plan1.pdf</code><span class="link-status">Link pending</span></div></a>
+            <a class="document-card" data-link="risk" aria-disabled="true"><div class="card-top"><span class="card-num">04 / RISK REGISTER</span><span class="card-arrow" aria-hidden="true">↗</span></div><div class="document-icon" aria-hidden="true">△</div><h3>Risk Management</h3><p>Project risks, likelihood, impact, mitigation, and ownership.</p><div class="card-bottom"><code>Risk1.pdf</code><span class="link-status">Link pending</span></div></a>
+            <a class="document-card" data-link="implementation" aria-disabled="true"><div class="card-top"><span class="card-num">05 / THE BUILD</span><span class="card-arrow" aria-hidden="true">↗</span></div><div class="document-icon" aria-hidden="true">&lt;/&gt;</div><h3>Implementation</h3><p>Implementation overview and third-party library information.</p><div class="card-bottom"><code>Impl1.pdf</code><span class="link-status">Link pending</span></div></a>
+            <div class="document-card feature-card"><div class="card-top"><span class="card-num">READY WHEN YOU ARE</span><span aria-hidden="true">✳</span></div><div class="feature-icon" aria-hidden="true">🪿</div><h3>Play the game</h3><p>Explore the Java release and the source code behind Goose Patrol.</p><div class="feature-actions"><a data-link="game" aria-disabled="true">Game JAR ↗</a><a data-link="repository" aria-disabled="true">Source code ↗</a></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="evidence section-width" id="evidence" aria-labelledby="evidence-title">
+        <div class="section-heading"><div><div class="section-kicker">// THE WORK BEHIND THE GAME</div><h2 id="evidence-title">Built in the <span class="highlight">open.</span></h2><p>Supporting artefacts showing how our project evolves.</p></div></div>
+        <div class="evidence-grid">
+          <article class="evidence-card"><span class="evidence-mark">↗</span><span class="evidence-tag">EVIDENCE / 01</span><h3>Weekly planning snapshots</h3><p>See how our tasks, responsibilities, and timelines change from week to week.</p><a data-link="weeklyPlans" aria-disabled="true">View snapshots <span>→</span></a></article>
+          <article class="evidence-card"><span class="evidence-mark">✣</span><span class="evidence-tag">EVIDENCE / 02</span><h3>Architecture evolution</h3><p>Early sketches, revisions, and design rationale from our architecture process.</p><a data-link="architectureEvidence" aria-disabled="true">View design history <span>→</span></a></article>
+          <article class="evidence-card"><span class="evidence-mark">⌁</span><span class="evidence-tag">EVIDENCE / 03</span><h3>Demo & extra materials</h3><p>Additional technical artefacts and useful supplementary project resources.</p><a data-link="extras" aria-disabled="true">Browse extras <span>→</span></a></article>
+        </div>
+      </section>
+
+      <section class="team-band" id="team" aria-labelledby="team-title"><div class="section-width team-inner"><div><div class="section-kicker">// MEET THE DEVELOPERS</div><h2 id="team-title">Small team.<br><span>Big goose energy.</span></h2><p>Six teammates building, testing, reviewing, and refining one shared project.</p></div><div class="team-side"><div class="team-number" id="team-number">TEAM ##</div><div class="team-names" id="team-names" aria-label="Group member names"><span>Member 1</span><span>Member 2</span><span>Member 3</span><span>Member 4</span><span>Member 5</span><span>Member 6</span></div></div></div></section>
+    </main>
+    <footer class="footer"><div class="section-width footer-inner"><a class="footer-brand" href="#top">🪿 goosepatrol</a><span>Engineering 1 · University of York · 2026–27</span><a href="#top">BACK TO TOP ↑</a></div></footer>
+  </div>
 </body>  
 </html>
