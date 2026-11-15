@@ -13,12 +13,16 @@ document.querySelectorAll('[data-link]').forEach((element) => {
     element.href = url;
     element.removeAttribute('aria-disabled');
     element.classList.add('is-available');
-    if (/^https?:\/\//i.test(url)) {
+    if (/^https?:\/\//i.test(url) || /\.pdf(?:[?#]|$)/i.test(url)) {
       element.target = '_blank';
       element.rel = 'noopener noreferrer';
     }
     const status = element.querySelector('.link-status');
-    if (status) status.textContent = /drive\.google\.com|docs\.google\.com/i.test(url) ? 'Open in Google Drive ↗' : 'Open resource ↗';
+    if (status) {
+      if (/\.pdf(?:[?#]|$)/i.test(url)) status.textContent = 'View PDF ↗';
+      else if (/drive\.google\.com|docs\.google\.com/i.test(url)) status.textContent = 'View on Google Docs ↗';
+      else status.textContent = 'Open resource ↗';
+    }
   } else {
     element.removeAttribute('href');
     element.setAttribute('aria-disabled', 'true');

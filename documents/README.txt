@@ -1,1 +1,1 @@
-Upload Req1.pdf, Arch1.pdf, Plan1.pdf, Risk1.pdf and Impl1.pdf here. Then enter the paths in config.js.
+Place the final five assessed PDFs here: Req1.pdf, Arch1.pdf, Plan1.pdf, Risk1.pdf, Impl1.pdf. Optionally add GameDesignBoard.pdf. After adding each, enable its local link in ../config.js. The assessment ZIP must also include the PDFs.

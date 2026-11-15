@@ -1,59 +1,55 @@
 # GOOSEAGEDDON — Team 8, Cohort 4 | ENG1 Website
 
-This is the updated **GitHub Pages** website for the team's ENG1 Assessment 1 game. It preserves the existing visual design and incorporates the supplied final architecture diagrams, six weekly Gantt charts, and eight activity tracker screenshots.
+This is the static **GitHub Pages** website for the team's ENG1 Assessment 1 game, including the architecture design history, six Gantt charts and eight tracker screenshots. The existing website styling is preserved.
 
-## What is already included
+## What's included
 
-- Home page with Team 8 / Cohort 4 branding and five assessment-document cards
-- `architecture.html`: four dated class-diagram iterations, two early behavioural diagrams, four final diagrams (10 image files)
-- `planning.html`: six full-resolution weekly Gantt charts, one for Weeks 2–7, and a separate gallery of eight workstream tracker screenshots
-- `credits.html`: attribution summary with a link slot for the team's complete sound register
-- `config.js`: one place to configure all external Google Drive and source/JAR links
+- `index.html` — home, team information, deliverables and resource links.
+- `architecture.html` — four dated UML design iterations, two early behavioural diagrams and four final diagrams.
+- `planning.html` — Gantt charts for Weeks 2–7 and eight workstream activity tracker screenshots.
+- `credits.html` — on-page library, asset and sound attribution summary. **There is no separate sound-register download link.**
+- `config.js` — report, game, repository and design-board link settings.
 
-## Link Google Drive documents
+## Assessment PDFs — included and linked
 
-**Assessed PDFs are linked from Google Drive; do not copy them into this website ZIP.** In `config.js` replace the empty strings for:
+The following five assessed PDFs have been included in the `documents/` folder, and their cards on the homepage are active:
 
-| `config.js` key | File or document | Destination |
-| --- | --- | --- |
-| `requirements` | `Req1.pdf` | Google Drive viewer URL |
-| `architecture` | `Arch1.pdf` | Google Drive viewer URL |
-| `planning` | `Plan1.pdf` | Google Drive viewer URL |
-| `risk` | `Risk1.pdf` | Google Drive viewer URL |
-| `implementation` | `Impl1.pdf` | Google Drive viewer URL |
-| `designBoard` | Game Design Board | Google Drive viewer URL |
-| `soundRegister` | Sound attribution register | Google Drive viewer URL |
+| Report | Relative URL |
+|---|---|
+| Requirements | `documents/Req1.pdf` |
+| Architecture | `documents/Arch1.pdf` |
+| Method Selection and Planning | `documents/Plan1.pdf` |
+| Risk Management | `documents/Risk1.pdf` |
+| Implementation | `documents/Impl1.pdf` |
 
-Example, after you've obtained the real URL from Google Drive:
+The **original rough design board** opens from the Architecture & Design History page at:
+https://docs.google.com/document/d/1ppu9bTNcR3OrPPNv8m8it_WAsVCL1ymvdmR1tac-c_M/edit?usp=sharing
 
-```js
-requirements: "https://drive.google.com/file/d/REAL_FILE_ID/view?usp=sharing",
-```
+The executable JAR is available under **Assets** in the published v1.0.0 GitHub Release. The source code link points to the Java game repository. The sound-attribution register has no separate website download link, while the Credits page retains its on-page acknowledgements.
 
-The `REAL_FILE_ID` text is illustrative only, **not a working URL**. The page intentionally displays **Google Drive link pending** until a real URL is entered.
+**The five assessed PDFs must still be included in the official assessment submission ZIP separately from this website source ZIP.**
 
-For each Google Drive file: click **Share → General access → Anyone with the link → Viewer**, copy the link, and confirm that an anonymous/incognito visitor can open it. Follow your institution's rules for sharing material. The public viewer link remains necessary even if a file is already visible to your team when signed in.
+## Pending software links
 
-## Game and source-code links (not ready yet)
+`game` in `config.js` points to the v1.0.0 GitHub Release page, where visitors download `GoosePatrolGame-1.0.0.jar` from **Assets**. `repository` points to the Java game source repository.
 
-`game` and `repository` in `config.js` remain blank, so those buttons are disabled rather than sending users to broken URLs. Fill them in only after your desktop executable JAR and source repository are available and tested.
+- Release: https://github.com/qkf526/Goose-Patrol-Game/releases/tag/v1.0.0
+- Source: https://github.com/qkf526/Goose-Patrol-Game
 
-## Planning evidence structure
+## Planning evidence
 
-- `evidence/planning/week2-gantt.png` to `week7-gantt.png`: six Gantt chart images supplied by the team. These are retrospective reconstructions of weekly planning schedules.
-- `evidence/planning/overall-tracker.png`, `game-control-tracker.png`, `player-tracker.png`, `geese-tracker.png`, `items-tracker.png`, `events-tracker.png`, `screens-tracker.png`, `qa-tracker.png`: the eight uploaded Google Sheets screenshots. **These are workstream trackers, not one tracker for each week.**
+The site includes six `evidence/planning/weekN-gantt.png` images for Weeks 2–7, plus eight separate workstream tracker images. The tracker images are grouped by workstream, not represented as weekly snapshots. See `planning.html` for details.
 
-Every chart and tracker opens in full resolution when clicked.
+## Publish on GitHub Pages
 
-## Publish updates on GitHub Pages
+1. Unzip the website package and upload its **contents** (not the enclosing folder) to the root of the GitHub Pages publishing branch for `qkf526/c4-team8-eng1`.
+2. All five final PDFs are already included; no further document-link configuration is required.
+3. Deploy all website files including the `documents/` folder; then open every report card and evidence-gallery image at `https://qkf526.github.io/c4-team8-eng1/`.
+4. Test using an incognito window to ensure all resources are publicly accessible.
+5. Verify that the Get the game and Repository buttons open the published release and source repository, respectively. Confirm Google Docs sharing allows people with the link to view the rough design board.
 
-1. Unzip the archive.
-2. Upload its **contents** to the root of the GitHub Pages publishing branch for `qkf526/c4-team8-eng1`.
-3. Verify that the site loads at `https://qkf526.github.io/c4-team8-eng1/`.
-4. Open `planning.html`, `architecture.html`, and `credits.html` and click sample gallery images.
-5. After updating `config.js` with each real Google Drive link, reload the page and test the document cards in an incognito browser window.
-6. Add the final `game` and `repository` links once the release is ready.
+`url1.txt` retains the website URL for the assessment submission.
 
-No build step or server is required; this website uses static HTML, CSS and JavaScript.
+## Homepage layout update
 
-`url1.txt` retains the website URL for submission. Do not confuse website publication with creating/submitting the final project source and executable JAR.
+The hero title `GOOSEAGEDDON.` now stays on one line at all responsive widths. The desktop hero gives extra width to its text column and uses a fluid title size instead of the previous oversized two-line heading, avoiding an excessively tall/narrow layout on large desktop displays.
