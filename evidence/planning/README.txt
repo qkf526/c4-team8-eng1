@@ -1,0 +1,1 @@
+Add twelve images using EXACT names: week2-gantt.png, week2-tracker.png, ... through week7-gantt.png, week7-tracker.png. The planning.html page displays each automatically when added. Do not backdate reconstructed Gantt charts as original charts.

@@ -7,7 +7,7 @@ const allLinks = config.links || {};
 document.querySelectorAll('[data-link]').forEach((element) => {
   const key = element.dataset.link;
   const url = typeof allLinks[key] === 'string' ? allLinks[key].trim() : '';
-  const isValid = /^(https?:\/\/|\.\.?\/|[\w-]+\/)/i.test(url);
+  const isValid = /^https?:\/\/\S+$/i.test(url) || /^(?:\.\/)?[\w.-]+(?:\/[\w.-]+)*(?:#[\w-]+)?$/.test(url);
 
   if (isValid) {
     element.href = url;
@@ -18,12 +18,12 @@ document.querySelectorAll('[data-link]').forEach((element) => {
       element.rel = 'noopener noreferrer';
     }
     const status = element.querySelector('.link-status');
-    if (status) status.textContent = 'Open file ↗';
+    if (status) status.textContent = /drive\.google\.com|docs\.google\.com/i.test(url) ? 'Open in Google Drive ↗' : 'Open resource ↗';
   } else {
     element.removeAttribute('href');
     element.setAttribute('aria-disabled', 'true');
     element.classList.add('is-pending');
-    element.title = 'Add this link in config.js when the file is ready';
+    element.title = 'This link has not been supplied yet; add it in config.js';
   }
 });
 
@@ -54,4 +54,3 @@ if (menu && nav) {
     nav.classList.remove('open');
   }));
 }
-
